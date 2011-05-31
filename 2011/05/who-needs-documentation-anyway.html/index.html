@@ -12,34 +12,43 @@
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0"
 href="/feed/atom" />
 <link rel='stylesheet' href='/css/pygments_murphy.css' type='text/css' />
+<link rel='stylesheet' href='/css/site.css' type='text/css' />
 
 
   </head>
   <body>
-    <div id="content">
+    <div id="outer-wrapper">
+    <div id="wrap2">
       
-  <h1><a href="/">Plunkett</a></h1>
-<p>This is a simple blog build with Blogofile.</p>
-<p>It's completely unthemed and is written as minimally as possible, while still
-retaining most of the blog features.</p>
-<p>Make sure you read the <a href="http://www.blogofile.com/documentation">online
-documentation</a>.</p>
-<p>If you're looking for a more fleshed-out site try running 'blogofile init
-blogofile.com', but you'll need <a href="http://www.git-scm.org">git</a> installed first.</p>
-<p>This is a header that goes on every page.</p>
-<hr/>
+  <div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Plunkett
+</h1>
+</div>
 
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
 
-      <div id="main_block">
-        <div id="prose_block">
+      <div id="content-wrapper">
+        <div id="main-wrapper">
+          <div id="main" class="main section">
           
 
-<div class="blog_post">
+<div class="post hentry">
   <a name="who-needs-documentation-anyway-"></a>
-  <h2 class="blog_post_title"><a href="/2011/05/who-needs-documentation-anyway.html" rel="bookmark" title="Permanent Link to Who needs documentation anyway?">Who needs documentation anyway?</a></h2>
+  <h3 class="post-title entry-title"><a href="/2011/05/who-needs-documentation-anyway.html" rel="bookmark" title="Permanent Link to Who needs documentation anyway?">Who needs documentation anyway?</a></h2>
   <small>May 20, 2011 at 07:41 PM | categories: 
 
 <a href='/category/uncategorized'>Uncategorized</a>
+ | <a href="http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html#disqus_thread">View Comments</a>
 </small><p/>
   <div class="post_prose">
     
@@ -127,10 +136,33 @@ I see a couple of available options:<br />
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  var disqus_url = "http://blogofile.charleso.org/2011/05/who-needs-documentation-anyway.html";
+  var disqus_url = "http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html";
 </script>
+<script type="text/javascript" src="http://disqus.com/forums/charleso/embed.js"></script>
+<noscript><a href="http://charleso.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
+          </div>
         </div><!-- End Prose Block -->
+        <div id="sidebar-wrapper">
+        
+  <div class="right_sidebar">
+    <div id="sidebar" class="sidebar section">
+  <h3>Blog Archive</h3>
+  <ul>
+    <li><a href="/2011/05/who-needs-documentation-anyway.html">Who needs documentation anyway?</a></li>
+    <li><a href="/2011/05/java-logging.html">Java logging and per-user tracing</a></li>
+    <li><a href="/2011/05/death-of-clearcase.html">Death of a Clearcase</a></li>
+    <li><a href="/2009/08/git-vs-mercurial.html">The DVCS Wars</a></li>
+    <li><a href="/2009/07/clearcase-strikes-back.html">ClearCase strikes back</a></li>
+    <li><a href="/2008/10/clearcase-for-git.html">A Clearcase for Git</a></li>
+    <li><a href="/2008/08/flex-o-matic.html">Flex-o-matic</a></li>
+    <li><a href="/2008/08/blogger-vs-wordpress.html">Blogger vs WordPress</a></li>
+  </ul>
+</div>
+  </div>
+
+        </div>
+        <div class="clear">&nbsp;</div>
       </div><!-- End Main Block -->
       <div id="footer">
         
@@ -140,14 +172,32 @@ I see a couple of available options:<br />
 Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br/>
 <br/>
 RSS feeds for <a href="/feed">Entries</a>
+ and <a
+href="http://charleso.disqus.com/latest.rss">Comments</a>.
 <br>
 </p>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/charleso/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
 
 
       </div> <!-- End Footer -->
     </div> <!-- End Content -->
+    </div>
   </body>
 </html>
+
 
 
 

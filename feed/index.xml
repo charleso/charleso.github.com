@@ -8,18 +8,18 @@
      >
   <channel>
     <title>Plunkett</title>
-    <link>http://blogofile.charleso.org</link>
+    <link>http://blog2.charleso.org</link>
     <description></description>
-    <pubDate>Tue, 31 May 2011 09:07:48 GMT</pubDate>
+    <pubDate>Tue, 31 May 2011 11:28:26 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>Who needs documentation anyway?</title>
-      <link>http://blogofile.charleso.org/2011/05/who-needs-documentation-anyway.html</link>
+      <link>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</link>
       <pubDate>Fri, 20 May 2011 19:41:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2011/05/who-needs-documentation-anyway.html</guid>
+      <guid>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</guid>
       <description>Who needs documentation anyway?</description>
       <content:encoded><![CDATA[
 So, we have a dilemma at work. How do the developers and documentation teams
@@ -100,10 +100,10 @@ I see a couple of available options:<br />
     </item>
     <item>
       <title>Java logging and per-user tracing</title>
-      <link>http://blogofile.charleso.org/2011/05/java-logging.html</link>
+      <link>http://blog2.charleso.org/2011/05/java-logging.html</link>
       <pubDate>Sat, 14 May 2011 05:20:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2011/05/java-logging.html</guid>
+      <guid>http://blog2.charleso.org/2011/05/java-logging.html</guid>
       <description>Java logging and per-user tracing</description>
       <content:encoded><![CDATA[
 This is a fairly short post about my brief experiences with logging in Java. I
@@ -142,10 +142,10 @@ an invaluable tool for diagnosing bugs. Give it a whirl!
     </item>
     <item>
       <title>Death of a Clearcase</title>
-      <link>http://blogofile.charleso.org/2011/05/death-of-clearcase.html</link>
+      <link>http://blog2.charleso.org/2011/05/death-of-clearcase.html</link>
       <pubDate>Sat, 07 May 2011 02:37:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2011/05/death-of-clearcase.html</guid>
+      <guid>http://blog2.charleso.org/2011/05/death-of-clearcase.html</guid>
       <description>Death of a Clearcase</description>
       <content:encoded><![CDATA[
 Well it's been <span>quite</span> some time since my last post. Time has moved
@@ -222,10 +222,10 @@ My next obsession? Scala!
     </item>
     <item>
       <title>The DVCS Wars</title>
-      <link>http://blogofile.charleso.org/2009/08/git-vs-mercurial.html</link>
+      <link>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</link>
       <pubDate>Sun, 02 Aug 2009 02:42:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2009/08/git-vs-mercurial.html</guid>
+      <guid>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</guid>
       <description>The DVCS Wars</description>
       <content:encoded><![CDATA[
 What is it about us nerds that dictates every discussion must be a war of some
@@ -309,10 +309,10 @@ stupid. :-P
     </item>
     <item>
       <title>ClearCase strikes back</title>
-      <link>http://blogofile.charleso.org/2009/07/clearcase-strikes-back.html</link>
+      <link>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</link>
       <pubDate>Sun, 12 Jul 2009 01:57:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2009/07/clearcase-strikes-back.html</guid>
+      <guid>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</guid>
       <description>ClearCase strikes back</description>
       <content:encoded><![CDATA[
 So it's been almost a year since my last post and I obviously haven't had much
@@ -427,10 +427,10 @@ spare time. I'm just hoping one of these days I get to use Haskell at work. :)
     </item>
     <item>
       <title>A Clearcase for Git</title>
-      <link>http://blogofile.charleso.org/2008/10/clearcase-for-git.html</link>
+      <link>http://blog2.charleso.org/2008/10/clearcase-for-git.html</link>
       <pubDate>Sat, 25 Oct 2008 19:30:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2008/10/clearcase-for-git.html</guid>
+      <guid>http://blog2.charleso.org/2008/10/clearcase-for-git.html</guid>
       <description>A Clearcase for Git</description>
       <content:encoded><![CDATA[
 My introduction to Clearcase began about two years again at my now current
@@ -480,10 +480,10 @@ don't have to think about it anymore. Sad really.
     </item>
     <item>
       <title>Flex-o-matic</title>
-      <link>http://blogofile.charleso.org/2008/08/flex-o-matic.html</link>
+      <link>http://blog2.charleso.org/2008/08/flex-o-matic.html</link>
       <pubDate>Thu, 07 Aug 2008 01:53:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2008/08/flex-o-matic.html</guid>
+      <guid>http://blog2.charleso.org/2008/08/flex-o-matic.html</guid>
       <description>Flex-o-matic</description>
       <content:encoded><![CDATA[
 <a href="http://selenium-ide.openqa.org/selenium-ide.gif"><img src="http://selenium-ide.openqa.org/selenium-ide.gif" alt="" border="0" /></a>
@@ -564,10 +564,10 @@ ordered.
     </item>
     <item>
       <title>Blogger vs WordPress</title>
-      <link>http://blogofile.charleso.org/2008/08/blogger-vs-wordpress.html</link>
+      <link>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</link>
       <pubDate>Thu, 07 Aug 2008 00:53:00 EST</pubDate>
       <category><![CDATA[Uncategorized]]></category>
-      <guid>http://blogofile.charleso.org/2008/08/blogger-vs-wordpress.html</guid>
+      <guid>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</guid>
       <description>Blogger vs WordPress</description>
       <content:encoded><![CDATA[
 I used to write a private WordPress blog and I was contemplating mapping
