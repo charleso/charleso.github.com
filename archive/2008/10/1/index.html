@@ -1,0 +1,120 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+  <title>Plunkett</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0"
+href="/feed/atom" />
+<link rel='stylesheet' href='/css/pygments_murphy.css' type='text/css' />
+
+
+  </head>
+  <body>
+    <div id="content">
+      
+  <h1><a href="/">Plunkett</a></h1>
+<p>This is a simple blog build with Blogofile.</p>
+<p>It's completely unthemed and is written as minimally as possible, while still
+retaining most of the blog features.</p>
+<p>Make sure you read the <a href="http://www.blogofile.com/documentation">online
+documentation</a>.</p>
+<p>If you're looking for a more fleshed-out site try running 'blogofile init
+blogofile.com', but you'll need <a href="http://www.git-scm.org">git</a> installed first.</p>
+<p>This is a header that goes on every page.</p>
+<hr/>
+
+
+      <div id="main_block">
+        <div id="prose_block">
+          
+  
+<div class="blog_post">
+  <a name="a-clearcase-for-git"></a>
+  <h2 class="blog_post_title"><a href="/2008/10/clearcase-for-git.html" rel="bookmark" title="Permanent Link to A Clearcase for Git">A Clearcase for Git</a></h2>
+  <small>October 25, 2008 at 07:30 PM | categories: 
+
+<a href='/category/uncategorized'>Uncategorized</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+My introduction to Clearcase began about two years again at my now current
+current job. Coming from SVN it seemed, and still is, so overly complicated and
+slow. What is this "config spec" you speak of? Anyway, I could write essays
+devoted to my loathing of Clearcase but this is not what this is about.
+<br /><br />
+I've been tempted for quite some time to introduce a DVCS, <span>any</span>
+DVCS, into the mix to make my life easier. However, I was concerned it may end
+up being just as much work as just sticking with Clearcase. I certainly didn't
+want to have to stuff around with manually deleting and adding files and native
+moving/renaming was also essential.
+<br /><br />
+I found some<a href="http://genaud.net/2008/08/clearcase-globally-git-locally/"> helpful scripts</a>,
+but nothing that really <span>just worked</span>.
+<br /><br />
+Anyway, I finally got my act together and put together a simple bridge which
+can push and pull changes into Git. About bloody time!
+<br /><br />
+<a href="http://github.com/charleso/git-cc/tree/master">http://github.com/charleso/git-cc/tree/master</a>
+<br /><br />
+The README is probably a good place to start for anyone interested.
+<br /><br />
+<span>Please note:</span> It's still very much a work in progress. However, I'm
+already using it at work to much joy and relief. Not more pointless checking
+out on private branches. No more VOB locking or stupid branch renaming for
+releases. Just sweet, sweet Gitness.
+<br /><br />
+A few basic examples:
+<br />
+<pre>
+    python gitcc.py init
+    d:\views\your_clearcase_view
+    python gitcc.py rebase
+    # Obligatory comment about getting coffee and doing work
+    python gitcc.py checkin
+</pre>
+That's about it really. I'm interested to see if anyone else finds this
+useful or has any suggestions.
+<br /><br />
+Finally, it was so refreshing to finally work with Python again. I'd forgotten
+how simple and concise it is to use. I'm so entrenched in Java that, like an
+addiction, it's too easy to fall back on. That's not to say I'm addicted to
+Java, nor do I hate it particularly, but it's just so comfortable and I just
+don't have to think about it anymore. Sad really.
+
+
+  </div>
+</div>
+
+
+
+  <hr class="interblog" />
+
+        </div><!-- End Prose Block -->
+      </div><!-- End Main Block -->
+      <div id="footer">
+        
+  <hr/>
+  This is a footer that appears on every page.
+  <p id="credits">
+Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br/>
+<br/>
+RSS feeds for <a href="/feed">Entries</a>
+<br>
+</p>
+
+
+      </div> <!-- End Footer -->
+    </div> <!-- End Content -->
+  </body>
+</html>
+
+
+
+

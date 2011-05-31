@@ -1,0 +1,112 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+  <title>Plunkett</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0"
+href="/feed/atom" />
+<link rel='stylesheet' href='/css/pygments_murphy.css' type='text/css' />
+
+
+  </head>
+  <body>
+    <div id="content">
+      
+  <h1><a href="/">Plunkett</a></h1>
+<p>This is a simple blog build with Blogofile.</p>
+<p>It's completely unthemed and is written as minimally as possible, while still
+retaining most of the blog features.</p>
+<p>Make sure you read the <a href="http://www.blogofile.com/documentation">online
+documentation</a>.</p>
+<p>If you're looking for a more fleshed-out site try running 'blogofile init
+blogofile.com', but you'll need <a href="http://www.git-scm.org">git</a> installed first.</p>
+<p>This is a header that goes on every page.</p>
+<hr/>
+
+
+      <div id="main_block">
+        <div id="prose_block">
+          
+
+<div class="blog_post">
+  <a name="java-logging-and-per-user-tracing"></a>
+  <h2 class="blog_post_title"><a href="/2011/05/java-logging.html" rel="bookmark" title="Permanent Link to Java logging and per-user tracing">Java logging and per-user tracing</a></h2>
+  <small>May 14, 2011 at 05:20 AM | categories: 
+
+<a href='/category/uncategorized'>Uncategorized</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+This is a fairly short post about my brief experiences with logging in Java. I
+realise it's 2011 and logging is very unsexy, but I thought I'd share anyway.
+<br /><br />
+Let me just say this straight-up - Java Logging you are <i>completely fucking
+useless</i>.  It boggles the mind how badly Sun screwed up the implementation
+of something so simple but yet so fundamental. It's logging for Christ's sake;
+how hard can it be?!? 
+<a href="http://www.bileblog.org/2003/10/javautillogging-shoddiness/">This</a>
+captures the essence of my feelings, so I'll leave it at that.
+<br /><br />
+One thing I <i>did</i> want to mention is
+<a href="http://logback.qos.ch/">Logback</a> and the awesome
+<a href="http://logback.qos.ch/manual/appenders.html#SiftingAppender">SiftingAppender</a>.
+Logback is the successor to the much loved 
+<a href="http://logging.apache.org/log4j/">Log4J</a>, written by the same dude and
+<a href="http://logback.qos.ch/reasonsToSwitch.html">addressing</a> some of the
+problems with the original. 
+<br /><br />
+My manager wanted a way for our users to enable <i>individual</i> logging on
+the server and not require any meddling on the server by an administrator. A
+quick Google revealed
+<a href="http://stackoverflow.com/questions/840465/have-you-seen-an-appender-that-would-log-to-separate-files-based-on-ndc-in-log4j/925978#925978">this</a>
+and from there it wasn't hard to implement a start/stop trace button on each
+page which harnesses
+<a href="http://www.slf4j.org/api/org/slf4j/MDC.html">MDC</a> for per-user
+logging. On completion the trace can either be downloaded or emailed directly
+from the server to the system administrator or bug tracker.
+<br /><br />
+Honestly, if/when I ever work on another online application I will almost
+certainly re-implement something very similar again. Being able to capture a
+trace of everything from the server for a single user session has proven to be
+an invaluable tool for diagnosing bugs. Give it a whirl!
+
+
+  </div>
+</div>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_url = "http://blogofile.charleso.org/2011/05/java-logging.html";
+</script>
+
+        </div><!-- End Prose Block -->
+      </div><!-- End Main Block -->
+      <div id="footer">
+        
+  <hr/>
+  This is a footer that appears on every page.
+  <p id="credits">
+Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br/>
+<br/>
+RSS feeds for <a href="/feed">Entries</a>
+<br>
+</p>
+
+
+      </div> <!-- End Footer -->
+    </div> <!-- End Content -->
+  </body>
+</html>
+
+
+
+

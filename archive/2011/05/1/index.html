@@ -1,0 +1,291 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+  <title>Plunkett</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0"
+href="/feed/atom" />
+<link rel='stylesheet' href='/css/pygments_murphy.css' type='text/css' />
+
+
+  </head>
+  <body>
+    <div id="content">
+      
+  <h1><a href="/">Plunkett</a></h1>
+<p>This is a simple blog build with Blogofile.</p>
+<p>It's completely unthemed and is written as minimally as possible, while still
+retaining most of the blog features.</p>
+<p>Make sure you read the <a href="http://www.blogofile.com/documentation">online
+documentation</a>.</p>
+<p>If you're looking for a more fleshed-out site try running 'blogofile init
+blogofile.com', but you'll need <a href="http://www.git-scm.org">git</a> installed first.</p>
+<p>This is a header that goes on every page.</p>
+<hr/>
+
+
+      <div id="main_block">
+        <div id="prose_block">
+          
+  
+<div class="blog_post">
+  <a name="who-needs-documentation-anyway-"></a>
+  <h2 class="blog_post_title"><a href="/2011/05/who-needs-documentation-anyway.html" rel="bookmark" title="Permanent Link to Who needs documentation anyway?">Who needs documentation anyway?</a></h2>
+  <small>May 20, 2011 at 07:41 PM | categories: 
+
+<a href='/category/uncategorized'>Uncategorized</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+So, we have a dilemma at work. How do the developers and documentation teams
+collaborate on a single set of documentation files while using familiar tools?
+Is such a thing possible or am I dreaming?
+<br /><br />
+Currently the documentation team at our work uses
+<a href="http://www.author-it.com/">Author-it</a>, a full-blown authoring
+'solution'. For some time we, the developers, were been sent Word documents
+which we updated and emailed back. At this point the source control fanatic in
+me started to twitch. It's a document - just like source code - can I see who
+did what changes? How do two people work on the same document at the same time,
+and what about conflicts? Can I have multiple version of the same document? The
+other problem was one of cost; Author-it is too expensive to justify individual
+licenses for developers.
+<br /><br />
+We had talked about switching to a more text-based documentation system
+on-and-off for some time. Finally I cracked and decided to just do it.
+<br /><br />
+<a href="http://en.wikipedia.org/wiki/LaTeX">Latex</a> was the first
+possibility that surfaced. However, as I thought about it more the idea of
+everyone having to learn obtuse Latex syntax before writing a single-line of
+documentation was a little off-putting. Note: I really do like Latex, but I
+felt like it might have been overly complicated for our situation.
+<br /><br />
+The second alternative was to use a publication
+<a href="http://www.dclab.com/dita_docbook.asp">format</a> like
+<a href="http://www.docbook.org/">Docbook</a> or
+<a href="http://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">DITA</a>.
+While certainly a powerful way to group content, the prospect of living in XML
+hell didn't enthuse me all that much. I already get enough of that in Java-land
+thank you very much.
+<br /><br />
+My final option was to use a lightweight markup langague, like
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> or
+<a href="http://docutils.sourceforge.net/rst.html">reStructureText</a> (ReST),
+which GitHub actively promotes for their README files. This felt like the right
+fit for us, and without further consultation I converted our current internal
+word documents to ReST, added them to Git and created a Jenkin job to output
+<a href="http://code.google.com/p/rst2pdf/">PDF</a> and HTML files. Bam!
+<br /><br />
+At this point us developers were happy again. We were back to using our
+favourite source control for collaboration, without have to stuff around with
+emailing Word documents. We could quickly edit text files, use source control
+to track/merge changes and didn't have to worry any more about niggling
+presentation issues. My manager, on the other hand, who was away at the time,
+was <i>not</i> so pleased. (I swear this had nothing to do with the timing of
+my rash decision).
+<br /><br />
+For us developers the idea of using a text editor to edit a document is a
+fairly comfortable one. For people used to - and who enjoy using - Word this
+was in some ways a big step backwards. No spell checking, no auto-complete, no
+drag 'n' drop. All that good stuff. Another complaint he had was about
+presentation - the PDF output wasn't slick enough to be used officially.
+Finally, if we wanted to switch to something else, ReST seemed to lack in some
+of the more powerful <a href="http://docs.oasis-open.org/dita/v1.0/archspec/topicover.html">concepts</a>
+required to support <a href="http://en.wikipedia.org/wiki/Single_source_publishing">single-source</a>
+publishing.
+<br /><br />
+I could definitely be wrong but it feels like nothing has quite <i>nailed</i>
+this space in the space, at least in the OSS community. What would certainly
+help is a powerful and easy to use  editor. Perhaps a plugin for Open Office
+would do the trick? Alternatively a browser-based editor, not too unlike
+<a href="http://rst.ninjs.org/">this</a>.
+<br /><br />
+We're currently in a holding pattern at the moment. Developers are still
+(happily) using ReST, but the 'official' stuff is being written by the
+documentation team. Us and them.
+<br /><br />
+I see a couple of available options:<br />
+<ol>
+    <li>What am I talking about, emailing Word documents around is fine - stop complaining.</li>
+    <li>Embrace Author-it and see if it can support more collaborators. Just looking at their website briefly it seems like they have an <a href="http://www.author-it.com/index.php?page=reviewer">online</a> review mode.</li>
+    <li>Meet my boss half-way, he can live without the nice GUI but we switch to a singe-source markup language like DocBook/DITA.</li>
+    <li>Everyone else be damned; developers rule; reStructuredText it is!</li>
+</ol>I'm curious what other people have done in similar situations.<br />
+
+
+  </div>
+</div>
+
+
+
+  <hr class="interblog" />
+  
+<div class="blog_post">
+  <a name="java-logging-and-per-user-tracing"></a>
+  <h2 class="blog_post_title"><a href="/2011/05/java-logging.html" rel="bookmark" title="Permanent Link to Java logging and per-user tracing">Java logging and per-user tracing</a></h2>
+  <small>May 14, 2011 at 05:20 AM | categories: 
+
+<a href='/category/uncategorized'>Uncategorized</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+This is a fairly short post about my brief experiences with logging in Java. I
+realise it's 2011 and logging is very unsexy, but I thought I'd share anyway.
+<br /><br />
+Let me just say this straight-up - Java Logging you are <i>completely fucking
+useless</i>.  It boggles the mind how badly Sun screwed up the implementation
+of something so simple but yet so fundamental. It's logging for Christ's sake;
+how hard can it be?!? 
+<a href="http://www.bileblog.org/2003/10/javautillogging-shoddiness/">This</a>
+captures the essence of my feelings, so I'll leave it at that.
+<br /><br />
+One thing I <i>did</i> want to mention is
+<a href="http://logback.qos.ch/">Logback</a> and the awesome
+<a href="http://logback.qos.ch/manual/appenders.html#SiftingAppender">SiftingAppender</a>.
+Logback is the successor to the much loved 
+<a href="http://logging.apache.org/log4j/">Log4J</a>, written by the same dude and
+<a href="http://logback.qos.ch/reasonsToSwitch.html">addressing</a> some of the
+problems with the original. 
+<br /><br />
+My manager wanted a way for our users to enable <i>individual</i> logging on
+the server and not require any meddling on the server by an administrator. A
+quick Google revealed
+<a href="http://stackoverflow.com/questions/840465/have-you-seen-an-appender-that-would-log-to-separate-files-based-on-ndc-in-log4j/925978#925978">this</a>
+and from there it wasn't hard to implement a start/stop trace button on each
+page which harnesses
+<a href="http://www.slf4j.org/api/org/slf4j/MDC.html">MDC</a> for per-user
+logging. On completion the trace can either be downloaded or emailed directly
+from the server to the system administrator or bug tracker.
+<br /><br />
+Honestly, if/when I ever work on another online application I will almost
+certainly re-implement something very similar again. Being able to capture a
+trace of everything from the server for a single user session has proven to be
+an invaluable tool for diagnosing bugs. Give it a whirl!
+
+
+  </div>
+</div>
+
+
+
+  <hr class="interblog" />
+  
+<div class="blog_post">
+  <a name="death-of-a-clearcase"></a>
+  <h2 class="blog_post_title"><a href="/2011/05/death-of-clearcase.html" rel="bookmark" title="Permanent Link to Death of a Clearcase">Death of a Clearcase</a></h2>
+  <small>May 07, 2011 at 02:37 AM | categories: 
+
+<a href='/category/uncategorized'>Uncategorized</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+Well it's been <span>quite</span> some time since my last post. Time has moved
+on in many respects, and yet it also feels like very little has changed.
+Someone at work suggested that I should add a final post to the saga of
+migrating away from Clearcase at work.
+<br /><br />
+The good news is: we won!
+<br /><br />
+That is to say that we now use Git for a majority of projects at work, with the
+last few being migrated as we speak. Huzzah!
+<br /><br />
+How did it happen?
+<br /><br />
+Sadly my persistent nagging made very little difference in the end.
+Fortunately, however, money did; the cost of continued licensing of Clearcase
+was not attractive to the bean counters upstairs. Combined with the increasing
+globalisation of our team meant that Git, or at least a free DVCS, became a
+very real option (free being the operative word). Mercurial was the first
+choice, but by those who didn't have any hands-on experience with either; a
+mistake I have blogged about earlier. Given that my team and I had been using
+Git in-anger for at least 6 months we fortunately (or unfortunately) managed to
+convince them to think again.
+<br /><br />
+We decided to host our source in The Cloud; specifically on GitHub. Now GitHub
+is an impressive site and I use it for all my open source projects. However, I
+do have one minor gripe: sadly GitHub has 
+<a href="http://support.github.com/discussions/organization-issues/19-grant-permission-to-add-new-members-only">not yet</a>
+implemented fine-grained security for Organisations. Given that the
+majority of users are open source and would most likely fork-on-write this
+makes sense. In our environment where we effectively work on a single
+repository it would be nicer if we could delegate a project leader or leaders
+and have them add/remove users for their team. Add the moment only 'Owners' can
+appear to do that, who can then also  see billing information. The other
+problem is that with push authorisation you get force-push as well, which can
+be extremely dangerous in the hands of some. Not an ideal situation to be sure.
+Before the official migration we used the awesome
+<a href="https://github.com/sitaramc/gitolite">gitolite</a> which handled security
+beautifully, even down the branch/force push level. I would hope that at some
+point GitHub will adopt something more like that; but for now things are still
+1 millions time better than using you-know-what and we can't complain too much.
+<br /><br />
+I should add that the obvious rebuttal to this complaint is that we probably
+need to consider switching to a more distributed/pull-model of collaboration,
+where everyone has their own repository. I don't disagree with this
+necessarily, but having a push model gives us high visibility of changes and a
+quick development cycle. A discussion for another day perhaps.
+<br /><br />
+And how about the users? Are they happy?
+<br /><br />
+As much as I love Git, I'm not finding it any easier to teach some of the finer
+points of Git and DVCS, and people still ask me for help on a daily basis. It
+does take a while for the difference between checkout and reset to sink-in,
+which I can emphasise with. Also multiple branches from within one repositories
+is something that causes confusion to begin with. Finally I am definitely well
+past getting to the point where I think overriding rebase as a default of pull
+is more hassle than its worth. Especially when people merge a support branch
+and then pull again, resulting in both the merge being undone and a duplicate
+commit being made. It doesn't help that Git does all this without a single
+warning or message.
+<br /><br />
+I guess what I've leant is that some developers just want to get their work
+done in peace. They don't really care about the finer points of source control,
+and they especially don't care about indexes, rebasing, DAGs or any other such
+nonsense. Perhaps in this respect Mercurial might have been a better choice?
+Less sharp edges for people to run into, and I could always run
+<a href="http://hg-git.github.com/">hg-git</a> locally to keep me happy. Who knows
+at this point. The decision has been made; the ship most definitely sailed. On
+the upside, I'm fairly sure most, if not all, people are happy about the switch
+away from Clearcase. The world is a better place for it too.
+<br /><br />
+My next obsession? Scala!
+
+
+  </div>
+</div>
+
+
+
+  <hr class="interblog" />
+
+        </div><!-- End Prose Block -->
+      </div><!-- End Main Block -->
+      <div id="footer">
+        
+  <hr/>
+  This is a footer that appears on every page.
+  <p id="credits">
+Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br/>
+<br/>
+RSS feeds for <a href="/feed">Entries</a>
+<br>
+</p>
+
+
+      </div> <!-- End Footer -->
+    </div> <!-- End Content -->
+  </body>
+</html>
+
+
+
+
