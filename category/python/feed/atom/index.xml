@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+   >
+  <title type="text">Plunkett</title>
+  <subtitle type="text"></subtitle>
+
+  <updated>2011-06-01T10:48:58Z</updated>
+  <generator uri="http://blogofile.com/">Blogofile</generator>
+
+  <link rel="alternate" type="text/html" href="http://blog2.charleso.org" />
+  <id>http://blog2.charleso.org/feed/atom/</id>
+  <link rel="self" type="application/atom+xml" href="http://blog2.charleso.org/feed/atom/" />
+  <entry>
+    <author>
+      <name>Charles O'Farrell</name>
+      <uri>http://blog2.charleso.org</uri>
+    </author>
+    <title type="html"><![CDATA[ClearCase strikes back]]></title>
+    <link rel="alternate" type="text/html" href="http://blog2.charleso.org/2009/07/clearcase-strikes-back.html" />
+    <id>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</id>
+    <updated>2009-07-13T04:05:55Z</updated>
+    <published>2009-07-12T01:57:00Z</published>
+    <category scheme="http://blog2.charleso.org" term="svn" />
+    <category scheme="http://blog2.charleso.org" term="git" />
+    <category scheme="http://blog2.charleso.org" term="java" />
+    <category scheme="http://blog2.charleso.org" term="python" />
+    <category scheme="http://blog2.charleso.org" term="dvcs" />
+    <category scheme="http://blog2.charleso.org" term="linux" />
+    <category scheme="http://blog2.charleso.org" term="clearcase" />
+    <summary type="html"><![CDATA[ClearCase strikes back]]></summary>
+    <content type="html" xml:base="http://blog2.charleso.org/2009/07/clearcase-strikes-back.html"><![CDATA[
+So it's been almost a year since my last post and I obviously haven't had much
+to say. I'm back to talk about the exact same thing, again. I really need to
+find something other than version control to obsess about...
+<br /><br />
+Recently I made the switch to Ubuntu at work. This left me without ClearCase,
+as it <a href="http://www-01.ibm.com/support/docview.wss?rs=984&uid=swg21239315">requires</a>
+some derivative of enterprise Redhat or SUSE, which didn't interest me in the
+slightest. I can only assume this is partially due to the complexities of
+managing a separate binary kernel module required by MVFS, their virtual
+filesystem. As an alternative Rational seem to be pushing their 
+<a href="http://www.ibm.com/developerworks/rational/library/05/0809_CCDemo/">Java implementation</a> 
+ClearCase Remote Client (CCRC). CCRC is essentially an Eclipse plugin
+communicating to a server - via a mixture of Web Services and RPC, which in
+turn has the 'real' client installed. As you would expect this seems to have
+some performance trade-offs, and it also feels to me quite unstable at the
+moment, often throwing strange errors unrelated to ClearCase.
+It's certainly better than nothing though.
+<br /><br />
+This, of course, raised immediate problems for me as I refuse to go back to
+using ClearCase directly now that I've tasted the good (and fast) Git life.
+Because I obviously can't seem to help myself I 
+<a href="http://github.com/charleso/gitcc4j/tree/master">ported</a> the gitcc to
+Java to use their new libraries, although it's <span>definitely</span> the last
+time.
+<br /><br />
+One good thing to come out of this new version is the cross-platform ability to
+login as any user, bypassing the domain-specific authentication that is
+normally used. At least in my situation ClearCase was authenticated via our
+Windows domain and I could see no quick and safe way to switch between users.
+This was/is essential for us to preserve the identity of the author of each
+commit in ClearCase. I strongly suspect there is a way around this, but for the
+life of me I couldn't think of any. The one alternative that occured to me
+would have been to run gitcc on something other than Windows configured with
+NFS and 'sudo su' to each user as required. For reasons I am unable to
+articulate I wasn't all that happy with the idea and never bothered.
+<br /><br />
+I've been running a gitcc daemon at work for the past week with great success.
+It's funny how the speed difference of pushing/pulling affects your work
+habits. Before I used to watch the checkin and rebase console output, like
+being glued to TV. Especially because we're using UCM this could take up to a
+few minutes to do it's rebase/deliver business, which would distract me and I
+would often 'hold off' on pushing or pulling because I wanted to do it all in
+one hit to save time. I no longer have that problem, being able to 'fetch'
+whenever I like, knowing it only takes (literally) a second to complete. Of
+course in the background the daemon is chugging away, syncing with ClearCase at
+its own slow-and-steady pace.
+<br /><br />
+Git seems to be finally taking off at work, after a slow and bumpy start.
+Personally I'm thrilled to be using Git at work regardless of what anyone else
+is doing. However some part of me isn't satisfied with just stopping there. It
+pains me to see others at work using a sub-par tool when I know there is a much
+better one available. The worst part is that most of them don't even know what
+they're missing, having never used anything else. Having originally come from
+SVN I couldn't bear to have to checkout files every time I wanted to make a
+change and I knew it didn't have to be that way. A co-worker even commented
+that they 'like' knowing when they're modifying files just in case they
+accidentally typed something without realising it. That may be true, but I
+strongly suspect after using Git for a few days they would be unlikely to
+revert. That's not even taking into consideration the many other benefits of
+using a DVCS - like local branching.
+<br /><br />
+What remains is the biggest hurdle: taking it to the 'next level'. A handful of
+developers are currently using it individually, but now that we have daemon
+available we can start to look at essentially ditching ClearCase, at least for
+our team. Part of the problem with working for a 'largish' company is their
+slow and cautious approach when introducing new technologies. From their
+perspective they have to consider what happens if I get run over by a bus
+tomorrow (those damn buses - always threatening to run us over). No one else
+really has the same intimate knowledge of gitcc and its inner workings. How
+much time and money would be wasted having to fix it, or revert to ClearCase if
+I was no longer there? The other issue is one of training and expertise. Now
+you have the problem of supporting <span>two</span> completely different source
+control systems, including training for, and maintenance of, both.
+<br /><br />
+The final problem that I face is one of Git's maturity. I love Git. Without a
+doubt it is the most advanced version control system available today. Sure it's
+got<span> more</span> than its fair share of warts, but I wouldn't use anything
+else (yes I know about Mercurial, and in any other universe without Git I would
+be using it quite happily). Unfortunately what it lacks at the moment is all
+that boring Windows GUI and administration tools that managers and
+non-technical people need (and I don't just mean TortoiseGit). I'm sure they'll
+be here soon enough, but in the meantime I would still hesitate if asked 'is
+Git ready'.  The problem is that the viable alternative, at this very second in
+time, would most likely be SVN, which isn't a <span>bad</span> system, but when
+compared to any modern DVCS it looks increasingly archaic. If we switched to
+SVN now I strongly suspect there would be pressure to switch (again) to
+something more powerful in the not-too-distant future.
+<br /><br />
+I'd love to use Git at work as our sole version control. Unfortunately as a
+developer I don't really have the time or patience to play politics and ensure
+that all aspects of a migration are planned for. However, it seems silly to me
+that if a majority of your developers start to use an alternative system for
+any aspect of work then there isn't some reflection on your current one and how
+you can make your working environment that much more productive. I'm not
+suggesting for a second that we replace ClearCase tomorrow. Instead I am simply
+proposing a gradual adoption, or at least trial, of Git over ClearCase. Hell,
+we're pretty much doing that now anyway, just not officially.
+<br /><br />
+Finally, the other revelation to come out of this is how truly entrenched in
+Java I have become. I found with the Python implementation I would often worry
+about making changes because I would have to spend part of the time
+investigating how to implement something 'in Python' rather than just being
+able to focus on the problem at hand. This has nothing to do with Python, it
+still remains a fantastic language, but perhaps says something about me getting
+older and less adaptable when learning new things. I hope I never reach that
+point where I'm too afraid to try something new, although I'm certainly
+becoming far less likely to (at least seriously) learn a new language in my
+spare time. I'm just hoping one of these days I get to use Haskell at work. :)
+]]></content>
+  </entry>
+  <entry>
+    <author>
+      <name>Charles O'Farrell</name>
+      <uri>http://blog2.charleso.org</uri>
+    </author>
+    <title type="html"><![CDATA[A Clearcase for Git]]></title>
+    <link rel="alternate" type="text/html" href="http://blog2.charleso.org/2008/10/clearcase-for-git.html" />
+    <id>http://blog2.charleso.org/2008/10/clearcase-for-git.html</id>
+    <updated>2008-11-10T13:23:37Z</updated>
+    <published>2008-10-25T19:30:00Z</published>
+    <category scheme="http://blog2.charleso.org" term="python" />
+    <category scheme="http://blog2.charleso.org" term="clearcase" />
+    <category scheme="http://blog2.charleso.org" term="git" />
+    <summary type="html"><![CDATA[A Clearcase for Git]]></summary>
+    <content type="html" xml:base="http://blog2.charleso.org/2008/10/clearcase-for-git.html"><![CDATA[
+My introduction to Clearcase began about two years again at my now current
+current job. Coming from SVN it seemed, and still is, so overly complicated and
+slow. What is this "config spec" you speak of? Anyway, I could write essays
+devoted to my loathing of Clearcase but this is not what this is about.
+<br /><br />
+I've been tempted for quite some time to introduce a DVCS, <span>any</span>
+DVCS, into the mix to make my life easier. However, I was concerned it may end
+up being just as much work as just sticking with Clearcase. I certainly didn't
+want to have to stuff around with manually deleting and adding files and native
+moving/renaming was also essential.
+<br /><br />
+I found some<a href="http://genaud.net/2008/08/clearcase-globally-git-locally/"> helpful scripts</a>,
+but nothing that really <span>just worked</span>.
+<br /><br />
+Anyway, I finally got my act together and put together a simple bridge which
+can push and pull changes into Git. About bloody time!
+<br /><br />
+<a href="http://github.com/charleso/git-cc/tree/master">http://github.com/charleso/git-cc/tree/master</a>
+<br /><br />
+The README is probably a good place to start for anyone interested.
+<br /><br />
+<span>Please note:</span> It's still very much a work in progress. However, I'm
+already using it at work to much joy and relief. Not more pointless checking
+out on private branches. No more VOB locking or stupid branch renaming for
+releases. Just sweet, sweet Gitness.
+<br /><br />
+A few basic examples:
+<br />
+<pre>
+    python gitcc.py init
+    d:\views\your_clearcase_view
+    python gitcc.py rebase
+    # Obligatory comment about getting coffee and doing work
+    python gitcc.py checkin
+</pre>
+That's about it really. I'm interested to see if anyone else finds this
+useful or has any suggestions.
+<br /><br />
+Finally, it was so refreshing to finally work with Python again. I'd forgotten
+how simple and concise it is to use. I'm so entrenched in Java that, like an
+addiction, it's too easy to fall back on. That's not to say I'm addicted to
+Java, nor do I hate it particularly, but it's just so comfortable and I just
+don't have to think about it anymore. Sad really.
+]]></content>
+  </entry>
+</feed>

@@ -1,0 +1,350 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+  <title>Plunkett</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0"
+href="/feed/atom" />
+<link rel='stylesheet' href='/css/pygments_murphy.css' type='text/css' />
+<link rel='stylesheet' href='/css/site.css' type='text/css' />
+
+
+  </head>
+  <body>
+    <div id="outer-wrapper">
+    <div id="wrap2">
+      
+  <div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Plunkett
+</h1>
+</div>
+
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+
+      <div id="content-wrapper">
+        <div id="main-wrapper">
+          <div id="main" class="main section">
+          
+  
+<div class="post hentry">
+  <a name="java-logging-and-per-user-tracing"></a>
+  <h3 class="post-title entry-title"><a href="/2011/05/java-logging.html" rel="bookmark" title="Permanent Link to Java logging and per-user tracing">Java logging and per-user tracing</a></h2>
+  <small>May 14, 2011 at 05:20 AM | categories: 
+
+<a href='/category/logging'>logging</a>, <a href='/category/java'>java</a>, <a href='/category/logback'>logback</a>
+ | <a href="http://blog2.charleso.org/2011/05/java-logging.html#disqus_thread">View Comments</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+This is a fairly short post about my brief experiences with logging in Java. I
+realise it's 2011 and logging is very unsexy, but I thought I'd share anyway.
+<br /><br />
+Let me just say this straight-up - Java Logging you are <i>completely fucking
+useless</i>.  It boggles the mind how badly Sun screwed up the implementation
+of something so simple but yet so fundamental. It's logging for Christ's sake;
+how hard can it be?!? 
+<a href="http://www.bileblog.org/2003/10/javautillogging-shoddiness/">This</a>
+captures the essence of my feelings, so I'll leave it at that.
+<br /><br />
+One thing I <i>did</i> want to mention is
+<a href="http://logback.qos.ch/">Logback</a> and the awesome
+<a href="http://logback.qos.ch/manual/appenders.html#SiftingAppender">SiftingAppender</a>.
+Logback is the successor to the much loved 
+<a href="http://logging.apache.org/log4j/">Log4J</a>, written by the same dude and
+<a href="http://logback.qos.ch/reasonsToSwitch.html">addressing</a> some of the
+problems with the original. 
+<br /><br />
+My manager wanted a way for our users to enable <i>individual</i> logging on
+the server and not require any meddling on the server by an administrator. A
+quick Google revealed
+<a href="http://stackoverflow.com/questions/840465/have-you-seen-an-appender-that-would-log-to-separate-files-based-on-ndc-in-log4j/925978#925978">this</a>
+and from there it wasn't hard to implement a start/stop trace button on each
+page which harnesses
+<a href="http://www.slf4j.org/api/org/slf4j/MDC.html">MDC</a> for per-user
+logging. On completion the trace can either be downloaded or emailed directly
+from the server to the system administrator or bug tracker.
+<br /><br />
+Honestly, if/when I ever work on another online application I will almost
+certainly re-implement something very similar again. Being able to capture a
+trace of everything from the server for a single user session has proven to be
+an invaluable tool for diagnosing bugs. Give it a whirl!
+
+
+  </div>
+</div>
+
+
+
+  <div class="after_post"><a href="http://blog2.charleso.org/2011/05/java-logging.html#disqus_thread">Read and Post Comments</a></div>
+  <hr class="interblog" />
+  
+<div class="post hentry">
+  <a name="clearcase-strikes-back"></a>
+  <h3 class="post-title entry-title"><a href="/2009/07/clearcase-strikes-back.html" rel="bookmark" title="Permanent Link to ClearCase strikes back">ClearCase strikes back</a></h2>
+  <small>July 12, 2009 at 01:57 AM | categories: 
+
+<a href='/category/svn'>svn</a>, <a href='/category/git'>git</a>, <a href='/category/java'>java</a>, <a href='/category/python'>python</a>, <a href='/category/dvcs'>dvcs</a>, <a href='/category/linux'>linux</a>, <a href='/category/clearcase'>clearcase</a>
+ | <a href="http://blog2.charleso.org/2009/07/clearcase-strikes-back.html#disqus_thread">View Comments</a>
+</small><p/>
+  <div class="post_prose">
+    
+  
+So it's been almost a year since my last post and I obviously haven't had much
+to say. I'm back to talk about the exact same thing, again. I really need to
+find something other than version control to obsess about...
+<br /><br />
+Recently I made the switch to Ubuntu at work. This left me without ClearCase,
+as it <a href="http://www-01.ibm.com/support/docview.wss?rs=984&uid=swg21239315">requires</a>
+some derivative of enterprise Redhat or SUSE, which didn't interest me in the
+slightest. I can only assume this is partially due to the complexities of
+managing a separate binary kernel module required by MVFS, their virtual
+filesystem. As an alternative Rational seem to be pushing their 
+<a href="http://www.ibm.com/developerworks/rational/library/05/0809_CCDemo/">Java implementation</a> 
+ClearCase Remote Client (CCRC). CCRC is essentially an Eclipse plugin
+communicating to a server - via a mixture of Web Services and RPC, which in
+turn has the 'real' client installed. As you would expect this seems to have
+some performance trade-offs, and it also feels to me quite unstable at the
+moment, often throwing strange errors unrelated to ClearCase.
+It's certainly better than nothing though.
+<br /><br />
+This, of course, raised immediate problems for me as I refuse to go back to
+using ClearCase directly now that I've tasted the good (and fast) Git life.
+Because I obviously can't seem to help myself I 
+<a href="http://github.com/charleso/gitcc4j/tree/master">ported</a> the gitcc to
+Java to use their new libraries, although it's <span>definitely</span> the last
+time.
+<br /><br />
+One good thing to come out of this new version is the cross-platform ability to
+login as any user, bypassing the domain-specific authentication that is
+normally used. At least in my situation ClearCase was authenticated via our
+Windows domain and I could see no quick and safe way to switch between users.
+This was/is essential for us to preserve the identity of the author of each
+commit in ClearCase. I strongly suspect there is a way around this, but for the
+life of me I couldn't think of any. The one alternative that occured to me
+would have been to run gitcc on something other than Windows configured with
+NFS and 'sudo su' to each user as required. For reasons I am unable to
+articulate I wasn't all that happy with the idea and never bothered.
+<br /><br />
+I've been running a gitcc daemon at work for the past week with great success.
+It's funny how the speed difference of pushing/pulling affects your work
+habits. Before I used to watch the checkin and rebase console output, like
+being glued to TV. Especially because we're using UCM this could take up to a
+few minutes to do it's rebase/deliver business, which would distract me and I
+would often 'hold off' on pushing or pulling because I wanted to do it all in
+one hit to save time. I no longer have that problem, being able to 'fetch'
+whenever I like, knowing it only takes (literally) a second to complete. Of
+course in the background the daemon is chugging away, syncing with ClearCase at
+its own slow-and-steady pace.
+<br /><br />
+Git seems to be finally taking off at work, after a slow and bumpy start.
+Personally I'm thrilled to be using Git at work regardless of what anyone else
+is doing. However some part of me isn't satisfied with just stopping there. It
+pains me to see others at work using a sub-par tool when I know there is a much
+better one available. The worst part is that most of them don't even know what
+they're missing, having never used anything else. Having originally come from
+SVN I couldn't bear to have to checkout files every time I wanted to make a
+change and I knew it didn't have to be that way. A co-worker even commented
+that they 'like' knowing when they're modifying files just in case they
+accidentally typed something without realising it. That may be true, but I
+strongly suspect after using Git for a few days they would be unlikely to
+revert. That's not even taking into consideration the many other benefits of
+using a DVCS - like local branching.
+<br /><br />
+What remains is the biggest hurdle: taking it to the 'next level'. A handful of
+developers are currently using it individually, but now that we have daemon
+available we can start to look at essentially ditching ClearCase, at least for
+our team. Part of the problem with working for a 'largish' company is their
+slow and cautious approach when introducing new technologies. From their
+perspective they have to consider what happens if I get run over by a bus
+tomorrow (those damn buses - always threatening to run us over). No one else
+really has the same intimate knowledge of gitcc and its inner workings. How
+much time and money would be wasted having to fix it, or revert to ClearCase if
+I was no longer there? The other issue is one of training and expertise. Now
+you have the problem of supporting <span>two</span> completely different source
+control systems, including training for, and maintenance of, both.
+<br /><br />
+The final problem that I face is one of Git's maturity. I love Git. Without a
+doubt it is the most advanced version control system available today. Sure it's
+got<span> more</span> than its fair share of warts, but I wouldn't use anything
+else (yes I know about Mercurial, and in any other universe without Git I would
+be using it quite happily). Unfortunately what it lacks at the moment is all
+that boring Windows GUI and administration tools that managers and
+non-technical people need (and I don't just mean TortoiseGit). I'm sure they'll
+be here soon enough, but in the meantime I would still hesitate if asked 'is
+Git ready'.  The problem is that the viable alternative, at this very second in
+time, would most likely be SVN, which isn't a <span>bad</span> system, but when
+compared to any modern DVCS it looks increasingly archaic. If we switched to
+SVN now I strongly suspect there would be pressure to switch (again) to
+something more powerful in the not-too-distant future.
+<br /><br />
+I'd love to use Git at work as our sole version control. Unfortunately as a
+developer I don't really have the time or patience to play politics and ensure
+that all aspects of a migration are planned for. However, it seems silly to me
+that if a majority of your developers start to use an alternative system for
+any aspect of work then there isn't some reflection on your current one and how
+you can make your working environment that much more productive. I'm not
+suggesting for a second that we replace ClearCase tomorrow. Instead I am simply
+proposing a gradual adoption, or at least trial, of Git over ClearCase. Hell,
+we're pretty much doing that now anyway, just not officially.
+<br /><br />
+Finally, the other revelation to come out of this is how truly entrenched in
+Java I have become. I found with the Python implementation I would often worry
+about making changes because I would have to spend part of the time
+investigating how to implement something 'in Python' rather than just being
+able to focus on the problem at hand. This has nothing to do with Python, it
+still remains a fantastic language, but perhaps says something about me getting
+older and less adaptable when learning new things. I hope I never reach that
+point where I'm too afraid to try something new, although I'm certainly
+becoming far less likely to (at least seriously) learn a new language in my
+spare time. I'm just hoping one of these days I get to use Haskell at work. :)
+
+
+  </div>
+</div>
+
+
+
+  <div class="after_post"><a href="http://blog2.charleso.org/2009/07/clearcase-strikes-back.html#disqus_thread">Read and Post Comments</a></div>
+  <hr class="interblog" />
+
+          </div>
+        </div><!-- End Prose Block -->
+        <div id="sidebar-wrapper">
+        
+  <div class="right_sidebar">
+    <div id="sidebar" class="sidebar section">
+  <h3>Me</h3>
+  <ul>
+    <li><a href="http://twitter.com/charlesofarrell/">Twitter</a></li>
+    <li><a href="http://github.com/charleso/">Github</a></li>
+    <li><a href="http://www.linkedin.com/pub/charles-o-farrell/2b/701/182/">Linkedin</a></li>
+    <li><a href="http://cv.charleso.org/">CV</a></li>
+  </ul>
+  <h3>Blog Archive</h3>
+  <ul>
+    <li><a href="/2011/05/who-needs-documentation-anyway.html">Who needs documentation anyway?</a></li>
+    <li><a href="/2011/05/java-logging.html">Java logging and per-user tracing</a></li>
+    <li><a href="/2011/05/death-of-clearcase.html">Death of a Clearcase</a></li>
+    <li><a href="/2009/08/git-vs-mercurial.html">The DVCS Wars</a></li>
+    <li><a href="/2009/07/clearcase-strikes-back.html">ClearCase strikes back</a></li>
+    <li><a href="/2008/10/clearcase-for-git.html">A Clearcase for Git</a></li>
+    <li><a href="/2008/08/flex-o-matic.html">Flex-o-matic</a></li>
+    <li><a href="/2008/08/blogger-vs-wordpress.html">Blogger vs WordPress</a></li>
+  </ul>
+  <h3>Subscribe</h3>
+  <ul>
+    <li><a href="/feed">Site RSS</a></li>
+  </ul>
+  <h3>Categories</h3>
+  <ul>
+    <li>
+      <a href="/category/automated">automated&nbsp;(1)</a><!--a href="/category/automated/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/blogger">blogger&nbsp;(1)</a><!--a href="/category/blogger/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/clearcase">clearcase&nbsp;(3)</a><!--a href="/category/clearcase/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/documentation">documentation&nbsp;(1)</a><!--a href="/category/documentation/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/dvcs">dvcs&nbsp;(2)</a><!--a href="/category/dvcs/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/flex">flex&nbsp;(1)</a><!--a href="/category/flex/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/git">git&nbsp;(4)</a><!--a href="/category/git/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/java">java&nbsp;(2)</a><!--a href="/category/java/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/linux">linux&nbsp;(1)</a><!--a href="/category/linux/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/logback">logback&nbsp;(1)</a><!--a href="/category/logback/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/logging">logging&nbsp;(1)</a><!--a href="/category/logging/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/markup">markup&nbsp;(1)</a><!--a href="/category/markup/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/mercurial">mercurial&nbsp;(1)</a><!--a href="/category/mercurial/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/python">python&nbsp;(2)</a><!--a href="/category/python/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/restructuredtext">restructuredtext&nbsp;(1)</a><!--a href="/category/restructuredtext/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/svn">svn&nbsp;(1)</a><!--a href="/category/svn/feed">rss</a-->
+    </li>
+    <li>
+      <a href="/category/wordpress">wordpress&nbsp;(1)</a><!--a href="/category/wordpress/feed">rss</a-->
+    </li>
+  </ul>
+</div>
+  </div>
+
+        </div>
+        <div class="clear">&nbsp;</div>
+      </div><!-- End Main Block -->
+      <div id="footer">
+        
+  <p id="credits">
+Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br/>
+<br/>
+RSS feeds for <a href="/feed">Entries</a>
+ and <a
+href="http://charleso.disqus.com/latest.rss">Comments</a>.
+<br>
+</p>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/charleso/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+
+
+      </div> <!-- End Footer -->
+    </div> <!-- End Content -->
+    </div>
+  </body>
+</html>
+
+
+
+
+

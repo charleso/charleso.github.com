@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     >
+  <channel>
+    <title>Plunkett</title>
+    <link>http://blog2.charleso.org</link>
+    <description></description>
+    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
+    <generator>Blogofile</generator>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <item>
+      <title>Blogger vs WordPress</title>
+      <link>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</link>
+      <pubDate>Thu, 07 Aug 2008 00:53:00 EST</pubDate>
+      <category><![CDATA[blogger]]></category>
+      <category><![CDATA[wordpress]]></category>
+      <guid>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</guid>
+      <description>Blogger vs WordPress</description>
+      <content:encoded><![CDATA[
+I used to write a private WordPress blog and I was contemplating mapping
+it to my shiny new domain to kick it off.
+<br /><br />
+However the following comparison clearly shows why I switched to Blogger instead:
+<br /><br />
+Wordpress - <a href="http://en.blog.wordpress.com/2006/10/24/domain-mapping-registration/">$10/year</a>
+<br />
+Blogger - Free
+<br /><br />
+It's that simple. Yes, I'm cheap.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+   >
+  <title type="text">Plunkett</title>
+  <subtitle type="text"></subtitle>
+
+  <updated>2011-06-01T10:48:58Z</updated>
+  <generator uri="http://blogofile.com/">Blogofile</generator>
+
+  <link rel="alternate" type="text/html" href="http://blog2.charleso.org" />
+  <id>http://blog2.charleso.org/feed/atom/</id>
+  <link rel="self" type="application/atom+xml" href="http://blog2.charleso.org/feed/atom/" />
+  <entry>
+    <author>
+      <name>Charles O'Farrell</name>
+      <uri>http://blog2.charleso.org</uri>
+    </author>
+    <title type="html"><![CDATA[Java logging and per-user tracing]]></title>
+    <link rel="alternate" type="text/html" href="http://blog2.charleso.org/2011/05/java-logging.html" />
+    <id>http://blog2.charleso.org/2011/05/java-logging.html</id>
+    <updated>2011-05-14T06:32:31Z</updated>
+    <published>2011-05-14T05:20:00Z</published>
+    <category scheme="http://blog2.charleso.org" term="logging" />
+    <category scheme="http://blog2.charleso.org" term="java" />
+    <category scheme="http://blog2.charleso.org" term="logback" />
+    <summary type="html"><![CDATA[Java logging and per-user tracing]]></summary>
+    <content type="html" xml:base="http://blog2.charleso.org/2011/05/java-logging.html"><![CDATA[
+This is a fairly short post about my brief experiences with logging in Java. I
+realise it's 2011 and logging is very unsexy, but I thought I'd share anyway.
+<br /><br />
+Let me just say this straight-up - Java Logging you are <i>completely fucking
+useless</i>.  It boggles the mind how badly Sun screwed up the implementation
+of something so simple but yet so fundamental. It's logging for Christ's sake;
+how hard can it be?!? 
+<a href="http://www.bileblog.org/2003/10/javautillogging-shoddiness/">This</a>
+captures the essence of my feelings, so I'll leave it at that.
+<br /><br />
+One thing I <i>did</i> want to mention is
+<a href="http://logback.qos.ch/">Logback</a> and the awesome
+<a href="http://logback.qos.ch/manual/appenders.html#SiftingAppender">SiftingAppender</a>.
+Logback is the successor to the much loved 
+<a href="http://logging.apache.org/log4j/">Log4J</a>, written by the same dude and
+<a href="http://logback.qos.ch/reasonsToSwitch.html">addressing</a> some of the
+problems with the original. 
+<br /><br />
+My manager wanted a way for our users to enable <i>individual</i> logging on
+the server and not require any meddling on the server by an administrator. A
+quick Google revealed
+<a href="http://stackoverflow.com/questions/840465/have-you-seen-an-appender-that-would-log-to-separate-files-based-on-ndc-in-log4j/925978#925978">this</a>
+and from there it wasn't hard to implement a start/stop trace button on each
+page which harnesses
+<a href="http://www.slf4j.org/api/org/slf4j/MDC.html">MDC</a> for per-user
+logging. On completion the trace can either be downloaded or emailed directly
+from the server to the system administrator or bug tracker.
+<br /><br />
+Honestly, if/when I ever work on another online application I will almost
+certainly re-implement something very similar again. Being able to capture a
+trace of everything from the server for a single user session has proven to be
+an invaluable tool for diagnosing bugs. Give it a whirl!
+]]></content>
+  </entry>
+</feed>

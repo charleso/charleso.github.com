@@ -7,7 +7,7 @@
   <title type="text">Plunkett</title>
   <subtitle type="text"></subtitle>
 
-  <updated>2011-05-31T11:28:26Z</updated>
+  <updated>2011-06-01T10:48:58Z</updated>
   <generator uri="http://blogofile.com/">Blogofile</generator>
 
   <link rel="alternate" type="text/html" href="http://blog2.charleso.org" />
@@ -23,7 +23,9 @@
     <id>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</id>
     <updated>2011-05-20T19:41:18Z</updated>
     <published>2011-05-20T19:41:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="restructuredtext" />
+    <category scheme="http://blog2.charleso.org" term="markup" />
+    <category scheme="http://blog2.charleso.org" term="documentation" />
     <summary type="html"><![CDATA[Who needs documentation anyway?]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html"><![CDATA[
 So, we have a dilemma at work. How do the developers and documentation teams
@@ -112,7 +114,9 @@ I see a couple of available options:<br />
     <id>http://blog2.charleso.org/2011/05/java-logging.html</id>
     <updated>2011-05-14T06:32:31Z</updated>
     <published>2011-05-14T05:20:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="logging" />
+    <category scheme="http://blog2.charleso.org" term="java" />
+    <category scheme="http://blog2.charleso.org" term="logback" />
     <summary type="html"><![CDATA[Java logging and per-user tracing]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2011/05/java-logging.html"><![CDATA[
 This is a fairly short post about my brief experiences with logging in Java. I
@@ -159,7 +163,8 @@ an invaluable tool for diagnosing bugs. Give it a whirl!
     <id>http://blog2.charleso.org/2011/05/death-of-clearcase.html</id>
     <updated>2011-05-14T06:33:02Z</updated>
     <published>2011-05-07T02:37:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="clearcase" />
+    <category scheme="http://blog2.charleso.org" term="git" />
     <summary type="html"><![CDATA[Death of a Clearcase]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2011/05/death-of-clearcase.html"><![CDATA[
 Well it's been <span>quite</span> some time since my last post. Time has moved
@@ -244,7 +249,9 @@ My next obsession? Scala!
     <id>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</id>
     <updated>2009-08-02T16:31:57Z</updated>
     <published>2009-08-02T02:42:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="dvcs" />
+    <category scheme="http://blog2.charleso.org" term="mercurial" />
+    <category scheme="http://blog2.charleso.org" term="git" />
     <summary type="html"><![CDATA[The DVCS Wars]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2009/08/git-vs-mercurial.html"><![CDATA[
 What is it about us nerds that dictates every discussion must be a war of some
@@ -336,7 +343,13 @@ stupid. :-P
     <id>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</id>
     <updated>2009-07-13T04:05:55Z</updated>
     <published>2009-07-12T01:57:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="svn" />
+    <category scheme="http://blog2.charleso.org" term="git" />
+    <category scheme="http://blog2.charleso.org" term="java" />
+    <category scheme="http://blog2.charleso.org" term="python" />
+    <category scheme="http://blog2.charleso.org" term="dvcs" />
+    <category scheme="http://blog2.charleso.org" term="linux" />
+    <category scheme="http://blog2.charleso.org" term="clearcase" />
     <summary type="html"><![CDATA[ClearCase strikes back]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2009/07/clearcase-strikes-back.html"><![CDATA[
 So it's been almost a year since my last post and I obviously haven't had much
@@ -459,7 +472,9 @@ spare time. I'm just hoping one of these days I get to use Haskell at work. :)
     <id>http://blog2.charleso.org/2008/10/clearcase-for-git.html</id>
     <updated>2008-11-10T13:23:37Z</updated>
     <published>2008-10-25T19:30:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="python" />
+    <category scheme="http://blog2.charleso.org" term="clearcase" />
+    <category scheme="http://blog2.charleso.org" term="git" />
     <summary type="html"><![CDATA[A Clearcase for Git]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2008/10/clearcase-for-git.html"><![CDATA[
 My introduction to Clearcase began about two years again at my now current
@@ -517,7 +532,8 @@ don't have to think about it anymore. Sad really.
     <id>http://blog2.charleso.org/2008/08/flex-o-matic.html</id>
     <updated>2008-08-07T06:03:16Z</updated>
     <published>2008-08-07T01:53:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="flex" />
+    <category scheme="http://blog2.charleso.org" term="automated" />
     <summary type="html"><![CDATA[Flex-o-matic]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2008/08/flex-o-matic.html"><![CDATA[
 <a href="http://selenium-ide.openqa.org/selenium-ide.gif"><img src="http://selenium-ide.openqa.org/selenium-ide.gif" alt="" border="0" /></a>
@@ -606,7 +622,8 @@ ordered.
     <id>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</id>
     <updated>2008-08-07T05:55:38Z</updated>
     <published>2008-08-07T00:53:00Z</published>
-    <category scheme="http://blog2.charleso.org" term="Uncategorized" />
+    <category scheme="http://blog2.charleso.org" term="blogger" />
+    <category scheme="http://blog2.charleso.org" term="wordpress" />
     <summary type="html"><![CDATA[Blogger vs WordPress]]></summary>
     <content type="html" xml:base="http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html"><![CDATA[
 I used to write a private WordPress blog and I was contemplating mapping

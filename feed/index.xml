@@ -10,7 +10,7 @@
     <title>Plunkett</title>
     <link>http://blog2.charleso.org</link>
     <description></description>
-    <pubDate>Tue, 31 May 2011 11:28:26 GMT</pubDate>
+    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -18,7 +18,9 @@
       <title>Who needs documentation anyway?</title>
       <link>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</link>
       <pubDate>Fri, 20 May 2011 19:41:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[restructuredtext]]></category>
+      <category><![CDATA[markup]]></category>
+      <category><![CDATA[documentation]]></category>
       <guid>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</guid>
       <description>Who needs documentation anyway?</description>
       <content:encoded><![CDATA[
@@ -102,7 +104,9 @@ I see a couple of available options:<br />
       <title>Java logging and per-user tracing</title>
       <link>http://blog2.charleso.org/2011/05/java-logging.html</link>
       <pubDate>Sat, 14 May 2011 05:20:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[logging]]></category>
+      <category><![CDATA[java]]></category>
+      <category><![CDATA[logback]]></category>
       <guid>http://blog2.charleso.org/2011/05/java-logging.html</guid>
       <description>Java logging and per-user tracing</description>
       <content:encoded><![CDATA[
@@ -144,7 +148,8 @@ an invaluable tool for diagnosing bugs. Give it a whirl!
       <title>Death of a Clearcase</title>
       <link>http://blog2.charleso.org/2011/05/death-of-clearcase.html</link>
       <pubDate>Sat, 07 May 2011 02:37:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[clearcase]]></category>
+      <category><![CDATA[git]]></category>
       <guid>http://blog2.charleso.org/2011/05/death-of-clearcase.html</guid>
       <description>Death of a Clearcase</description>
       <content:encoded><![CDATA[
@@ -224,7 +229,9 @@ My next obsession? Scala!
       <title>The DVCS Wars</title>
       <link>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</link>
       <pubDate>Sun, 02 Aug 2009 02:42:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[dvcs]]></category>
+      <category><![CDATA[mercurial]]></category>
+      <category><![CDATA[git]]></category>
       <guid>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</guid>
       <description>The DVCS Wars</description>
       <content:encoded><![CDATA[
@@ -311,7 +318,13 @@ stupid. :-P
       <title>ClearCase strikes back</title>
       <link>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</link>
       <pubDate>Sun, 12 Jul 2009 01:57:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[svn]]></category>
+      <category><![CDATA[git]]></category>
+      <category><![CDATA[java]]></category>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[dvcs]]></category>
+      <category><![CDATA[linux]]></category>
+      <category><![CDATA[clearcase]]></category>
       <guid>http://blog2.charleso.org/2009/07/clearcase-strikes-back.html</guid>
       <description>ClearCase strikes back</description>
       <content:encoded><![CDATA[
@@ -429,7 +442,9 @@ spare time. I'm just hoping one of these days I get to use Haskell at work. :)
       <title>A Clearcase for Git</title>
       <link>http://blog2.charleso.org/2008/10/clearcase-for-git.html</link>
       <pubDate>Sat, 25 Oct 2008 19:30:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[clearcase]]></category>
+      <category><![CDATA[git]]></category>
       <guid>http://blog2.charleso.org/2008/10/clearcase-for-git.html</guid>
       <description>A Clearcase for Git</description>
       <content:encoded><![CDATA[
@@ -482,7 +497,8 @@ don't have to think about it anymore. Sad really.
       <title>Flex-o-matic</title>
       <link>http://blog2.charleso.org/2008/08/flex-o-matic.html</link>
       <pubDate>Thu, 07 Aug 2008 01:53:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[flex]]></category>
+      <category><![CDATA[automated]]></category>
       <guid>http://blog2.charleso.org/2008/08/flex-o-matic.html</guid>
       <description>Flex-o-matic</description>
       <content:encoded><![CDATA[
@@ -566,7 +582,8 @@ ordered.
       <title>Blogger vs WordPress</title>
       <link>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</link>
       <pubDate>Thu, 07 Aug 2008 00:53:00 EST</pubDate>
-      <category><![CDATA[Uncategorized]]></category>
+      <category><![CDATA[blogger]]></category>
+      <category><![CDATA[wordpress]]></category>
       <guid>http://blog2.charleso.org/2008/08/blogger-vs-wordpress.html</guid>
       <description>Blogger vs WordPress</description>
       <content:encoded><![CDATA[
