@@ -7,7 +7,7 @@
   <title type="text">Plunkett</title>
   <subtitle type="text"></subtitle>
 
-  <updated>2011-06-02T10:15:49Z</updated>
+  <updated>2011-06-02T11:11:17Z</updated>
   <generator uri="http://blogofile.com/">Blogofile</generator>
 
   <link rel="alternate" type="text/html" href="http://blog.charleso.org" />
@@ -536,7 +536,7 @@ don't have to think about it anymore. Sad really.
     <category scheme="http://blog.charleso.org" term="automated" />
     <summary type="html"><![CDATA[Flex-o-matic]]></summary>
     <content type="html" xml:base="http://blog.charleso.org/2008/08/flex-o-matic.html"><![CDATA[
-<a href="http://selenium-ide.openqa.org/selenium-ide.gif"><img src="http://selenium-ide.openqa.org/selenium-ide.gif" alt="" border="0" /></a>
+<a href="http://selenium-ide.openqa.org/selenium-ide.gif"><img src="http://seleniumhq.org/projects/ide/selenium-ide.gif" alt="" border="0" /></a>
 A few weeks ago I investigated Flex automated testing to determine it's
 feasibility for our new Flex project. On Wednesday my boss has asked me to
 follow through with that original investigation and get it up-and-running on
