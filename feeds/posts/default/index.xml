@@ -7,12 +7,44 @@
   <title type="text">Plunkett</title>
   <subtitle type="text"></subtitle>
 
-  <updated>2011-06-02T11:11:17Z</updated>
+  <updated>2011-06-02T11:27:26Z</updated>
   <generator uri="http://blogofile.com/">Blogofile</generator>
 
   <link rel="alternate" type="text/html" href="http://blog.charleso.org" />
   <id>http://blog.charleso.org/feed/atom/</id>
   <link rel="self" type="application/atom+xml" href="http://blog.charleso.org/feed/atom/" />
+  <entry>
+    <author>
+      <name>Charles O'Farrell</name>
+      <uri>http://blog.charleso.org</uri>
+    </author>
+    <title type="html"><![CDATA[Blogofile]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.charleso.org/2011/05/blogofile.html" />
+    <id>http://blog.charleso.org/2011/05/blogofile.html</id>
+    <updated>2011-06-02T20:21:00Z</updated>
+    <published>2011-06-02T20:21:00Z</published>
+    <category scheme="http://blog.charleso.org" term="github" />
+    <category scheme="http://blog.charleso.org" term="blogofile" />
+    <summary type="html"><![CDATA[Blogofile]]></summary>
+    <content type="html" xml:base="http://blog.charleso.org/2011/05/blogofile.html"><![CDATA[<div class="document">
+<p>Inspired by my friend <a class="reference external" href="http://buffered.io/2011/02/15/now-powered-by-blogofile/">OJ</a>, I've decided to make the switch to Blogofile.
+I guess I have too much time on my hands.</p>
+<p>There isn't much I can say on this subject that hasn't already <a class="reference external" href="http://mike.pirnat.com/2010/12/18/why-i-switched-to-blogofile/">been</a> <a class="reference external" href="http://morgangoose.com/blog/2010/09/28/switching-to-blogofile/">said</a>.
+<a class="reference external" href="https://github.com/EnigmaCurry/blogofile/blob/master/converters/blogger2blogofile.py">This</a> script came in handy to convert my Blogger posts across.</p>
+<p>My biggest hurdle was finding a new host <em>and</em> being a complete cheapskate.
+I couldn't seem to find a free and simple HTML site. I started to think
+about Dropbox, until I realised that they don't respect index.html files.
+Fortunately <a class="reference external" href="http://manuel-ohlendorf.de/blog/2010/12/23/hosting-a-blogofile-blog-on-github-with-github-pages/">someone</a> had a neat idea - host it on <a class="reference external" href="http://pages.github.com/">GitHub</a>!</p>
+<p>One thing would have been <em>nice</em> is a selection of out-the-box themes;
+but completely understandable that there isn't.
+In the meantime I ported my current Blogger <a class="reference external" href="http://www.blogcrowds.com/resources/blogger-templates/13-565">theme</a>, which was surprisingly
+painless.</p>
+<p>I'll probably be tweaking bits-and-pieces of the site in the next few weeks,
+like a child playing with a new toy. Procrastinating instead of, say,
+writing new blog posts.</p>
+</div>
+]]></content>
+  </entry>
   <entry>
     <author>
       <name>Charles O'Farrell</name>
