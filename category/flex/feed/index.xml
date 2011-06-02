@@ -8,19 +8,19 @@
      >
   <channel>
     <title>Plunkett</title>
-    <link>http://blog2.charleso.org</link>
+    <link>http://blog.charleso.org</link>
     <description></description>
-    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
+    <pubDate>Thu, 02 Jun 2011 10:15:49 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>Flex-o-matic</title>
-      <link>http://blog2.charleso.org/2008/08/flex-o-matic.html</link>
+      <link>http://blog.charleso.org/2008/08/flex-o-matic.html</link>
       <pubDate>Thu, 07 Aug 2008 01:53:00 EST</pubDate>
       <category><![CDATA[flex]]></category>
       <category><![CDATA[automated]]></category>
-      <guid>http://blog2.charleso.org/2008/08/flex-o-matic.html</guid>
+      <guid>http://blog.charleso.org/2008/08/flex-o-matic.html</guid>
       <description>Flex-o-matic</description>
       <content:encoded><![CDATA[
 <a href="http://selenium-ide.openqa.org/selenium-ide.gif"><img src="http://selenium-ide.openqa.org/selenium-ide.gif" alt="" border="0" /></a>

@@ -8,20 +8,20 @@
      >
   <channel>
     <title>Plunkett</title>
-    <link>http://blog2.charleso.org</link>
+    <link>http://blog.charleso.org</link>
     <description></description>
-    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
+    <pubDate>Thu, 02 Jun 2011 10:15:49 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>The DVCS Wars</title>
-      <link>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</link>
+      <link>http://blog.charleso.org/2009/08/git-vs-mercurial.html</link>
       <pubDate>Sun, 02 Aug 2009 02:42:00 EST</pubDate>
       <category><![CDATA[dvcs]]></category>
       <category><![CDATA[mercurial]]></category>
       <category><![CDATA[git]]></category>
-      <guid>http://blog2.charleso.org/2009/08/git-vs-mercurial.html</guid>
+      <guid>http://blog.charleso.org/2009/08/git-vs-mercurial.html</guid>
       <description>The DVCS Wars</description>
       <content:encoded><![CDATA[
 What is it about us nerds that dictates every discussion must be a war of some

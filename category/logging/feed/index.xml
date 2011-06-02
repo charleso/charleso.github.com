@@ -8,20 +8,20 @@
      >
   <channel>
     <title>Plunkett</title>
-    <link>http://blog2.charleso.org</link>
+    <link>http://blog.charleso.org</link>
     <description></description>
-    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
+    <pubDate>Thu, 02 Jun 2011 10:15:49 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>Java logging and per-user tracing</title>
-      <link>http://blog2.charleso.org/2011/05/java-logging.html</link>
+      <link>http://blog.charleso.org/2011/05/java-logging.html</link>
       <pubDate>Sat, 14 May 2011 05:20:00 EST</pubDate>
       <category><![CDATA[logging]]></category>
       <category><![CDATA[java]]></category>
       <category><![CDATA[logback]]></category>
-      <guid>http://blog2.charleso.org/2011/05/java-logging.html</guid>
+      <guid>http://blog.charleso.org/2011/05/java-logging.html</guid>
       <description>Java logging and per-user tracing</description>
       <content:encoded><![CDATA[
 This is a fairly short post about my brief experiences with logging in Java. I

@@ -8,20 +8,20 @@
      >
   <channel>
     <title>Plunkett</title>
-    <link>http://blog2.charleso.org</link>
+    <link>http://blog.charleso.org</link>
     <description></description>
-    <pubDate>Wed, 01 Jun 2011 10:48:58 GMT</pubDate>
+    <pubDate>Thu, 02 Jun 2011 10:15:49 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>Who needs documentation anyway?</title>
-      <link>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</link>
+      <link>http://blog.charleso.org/2011/05/who-needs-documentation-anyway.html</link>
       <pubDate>Fri, 20 May 2011 19:41:00 EST</pubDate>
       <category><![CDATA[restructuredtext]]></category>
       <category><![CDATA[markup]]></category>
       <category><![CDATA[documentation]]></category>
-      <guid>http://blog2.charleso.org/2011/05/who-needs-documentation-anyway.html</guid>
+      <guid>http://blog.charleso.org/2011/05/who-needs-documentation-anyway.html</guid>
       <description>Who needs documentation anyway?</description>
       <content:encoded><![CDATA[
 So, we have a dilemma at work. How do the developers and documentation teams
