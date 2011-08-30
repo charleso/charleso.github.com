@@ -10,7 +10,7 @@
     <title>Plunkett</title>
     <link>http://blog.charleso.org</link>
     <description></description>
-    <pubDate>Tue, 30 Aug 2011 08:42:03 GMT</pubDate>
+    <pubDate>Tue, 30 Aug 2011 09:24:35 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -22,7 +22,7 @@
       <guid>http://blog.charleso.org/2011/08/taste-of-scala.html</guid>
       <description>A Taste of Scala</description>
       <content:encoded><![CDATA[<div class="document">
-<p>Recently, at the <a class="reference external" href="http://www.meetup.com/qldjvm/">Queensland JVM Meetup group</a>,
+<p>Recently at the <a class="reference external" href="http://www.meetup.com/qldjvm/">Queensland JVM Meetup group</a>
 I gave a <a class="reference external" href="http://www.meetup.com/qldjvm/events/26374761/">Scala introduction presentation</a>,
 with some good 'ol Java bashing to boot.</p>
 <p>Check it <a class="reference external" href="http://vimeo.com/groups/qldjvm/videos/28291058">out</a>. Slides <a class="reference external" href="http://blog.charleso.org/scala-talk/">here</a>.</p>
