@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+   >
+  <title type="text">Plunkett</title>
+  <subtitle type="text"></subtitle>
+
+  <updated>2011-08-30T08:42:03Z</updated>
+  <generator uri="http://blogofile.com/">Blogofile</generator>
+
+  <link rel="alternate" type="text/html" href="http://blog.charleso.org" />
+  <id>http://blog.charleso.org/feed/atom/</id>
+  <link rel="self" type="application/atom+xml" href="http://blog.charleso.org/feed/atom/" />
+  <entry>
+    <author>
+      <name>Charles O'Farrell</name>
+      <uri>http://blog.charleso.org</uri>
+    </author>
+    <title type="html"><![CDATA[A Taste of Scala]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.charleso.org/2011/08/taste-of-scala.html" />
+    <id>http://blog.charleso.org/2011/08/taste-of-scala.html</id>
+    <updated>2011-08-30T20:33:00Z</updated>
+    <published>2011-08-30T20:33:00Z</published>
+    <category scheme="http://blog.charleso.org" term="scala" />
+    <summary type="html"><![CDATA[A Taste of Scala]]></summary>
+    <content type="html" xml:base="http://blog.charleso.org/2011/08/taste-of-scala.html"><![CDATA[<div class="document">
+<p>Recently, at the <a class="reference external" href="http://www.meetup.com/qldjvm/">Queensland JVM Meetup group</a>,
+I gave a <a class="reference external" href="http://www.meetup.com/qldjvm/events/26374761/">Scala introduction presentation</a>,
+with some good 'ol Java bashing to boot.</p>
+<p>Check it <a class="reference external" href="http://vimeo.com/groups/qldjvm/videos/28291058">out</a>. Slides <a class="reference external" href="http://blog.charleso.org/scala-talk/">here</a>.</p>
+<iframe
+    src="http://player.vimeo.com/video/28291058?title=0&amp;byline=0&amp;portrait=0"
+    width="400" height="300" frameborder="0">
+</iframe></div>
+]]></content>
+  </entry>
+</feed>
